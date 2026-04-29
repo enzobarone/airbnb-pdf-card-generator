@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Airbnb PDF Card Generator",
+  "version": "1.0",
+  "description": "Turn any Airbnb listing into a clean, printable A4 summary card.",
+  "author": "Enzo Barone",
+  "homepage_url": "https://www.enzobarone.it",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Genera scheda Airbnb",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; img-src 'self' https://*.muscache.com https://*.airbnb.com https://*.airbnb.it data:; connect-src https://server.arcgisonline.com;"
+  }
+}

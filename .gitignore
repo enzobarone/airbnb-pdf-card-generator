@@ -1,0 +1,14 @@
+.claude/
+memory/
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+node_modules/
+package-lock.json
+
+grafica/
+landing.html
+privacy-policy.html
+privacy-policy.md
